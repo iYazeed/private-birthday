@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Rery!</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, cyan, magenta);
+            font-family: 'Comic Sans MS', sans-serif;
+            text-align: center;
+            color: white;
+        }
+        .canvas-container, .message {
+            display: none; /* Initially hidden */
+        }
+        canvas {
+            display: block;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.5);
+        }
+        .message {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        .show {
+            display: block; /* Show when button is clicked */
+        }
+    </style>
+</head>
+<body>
+    
+    <button onclick="showCard()">Press Here Birthday Girl</button>
+    <div class="canvas-container">
+        <canvas id="birthdayCanvas" width="600" height="700"></canvas>
+    </div>
+    <div class="message">
+        <h1>Happy Birthday to my favorite dentist (Rery!)</h1>
+        <p>Date: 8/16</p>
+        
+        <p>From: ENG.Yoyo</p>
+        <p>YOU ARE A BREATH TAKING AND I LIKE YOU TOO MUCH</p>
+    </div>
+    <script src="birthday.js"></script>
+    <script>
+        function showCard() {
+            document.querySelector('.canvas-container').classList.add('show');
+            document.querySelector('.message').classList.add('show');
+        }
+    </script>
+</body>
+</html>
